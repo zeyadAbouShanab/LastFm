@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/artistImage"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:scaleType="fitXY"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/artistNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:text="John Cena"
+        android:textColor="#100000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/artistImage"
+        app:layout_constraintStart_toStartOf="@+id/artistImage"
+        app:layout_constraintTop_toBottomOf="@+id/artistImage" />
+
+    <TextView
+        android:id="@+id/listenersText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="TextView"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/artistImage"
+        app:layout_constraintStart_toStartOf="@+id/artistImage"
+        app:layout_constraintTop_toBottomOf="@+id/artistNameText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

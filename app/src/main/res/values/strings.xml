@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">LastFm</string>
+    <string name="api_key">7127a4fa7a04171653177fe3fddbc40f</string>
+    <string name="secret">6f42235e913b4e4710eff361ddb8e645</string>
+
+</resources>

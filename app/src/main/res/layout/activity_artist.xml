@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ArtistActivity">
+
+    <ImageView
+        android:id="@+id/activityArtistImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/activityArtistName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/activityArtistImage"
+        app:layout_constraintStart_toStartOf="@+id/activityArtistImage"
+        app:layout_constraintTop_toBottomOf="@+id/activityArtistImage" />
+
+    <TextView
+        android:id="@+id/activityArtistViews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/activityArtistName"
+        app:layout_constraintStart_toStartOf="@+id/activityArtistName"
+        app:layout_constraintTop_toBottomOf="@+id/activityArtistName" />
+
+    <TextView
+        android:id="@+id/activityArtistWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="TextView"
+        android:autoLink="web"
+        android:textColor="#3450EC"
+        app:layout_constraintEnd_toEndOf="@+id/activityArtistName"
+        app:layout_constraintStart_toStartOf="@+id/activityArtistName"
+        app:layout_constraintTop_toBottomOf="@+id/activityArtistViews" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
